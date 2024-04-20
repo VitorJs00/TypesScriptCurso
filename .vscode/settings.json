@@ -9,8 +9,7 @@
     ],
     "window.zoomLevel": 0,
     "code-runner.executorMap": {
-        "typescript": "ts-node",
-        
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    }
+        "typescript": "npx ts-node --files",
+    },
+    "code-runner.runInTerminal": true
 }
