@@ -2,34 +2,33 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
-    ecmaFeatures:{
-      jsx:true,
+    ecmaFeatures: {
+      jsx: true,
     },
-    project: "./tsconfig.json"
   },
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       node: {
-        paths: ['src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
+        paths: ["src"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
   env: {
     browser: true,
     amd: true,
-    node: true
+    node: true,
   },
-  plugins: ["simple-import-sort","@typescript-eslint", "prettier"],
+  plugins: ["simple-import-sort", "@typescript-eslint", "prettier"],
   rules: {
-    "prettier/prettier": ["error", { usePrettierrc: true }]
+    "prettier/prettier": ["error", { usePrettierrc: true }],
     // Adicione regras personalizadas aqui, se desejar
-  }
+  },
 };
