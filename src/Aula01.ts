@@ -1,3 +1,2 @@
 const x = 9;
-
-console.log('resultado', x);
+console.log("x", x);

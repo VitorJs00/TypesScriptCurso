@@ -1,13 +1,21 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext","DOM"],
-    "outDir": "./dist",
-    "skipLibCheck": true
-
-  },
-  "include": ["./src"]
-}
+    "compilerOptions": {
+      "target": "ESNext",          
+      "module": "ESNext",          
+      "strict": true,              
+      "esModuleInterop": true,     
+      "moduleResolution": "Node",  
+      "resolveJsonModule": true    
+    },
+    "include": ["src"],             
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./",
+      "ecmaVersion": 2022,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  }
+  
