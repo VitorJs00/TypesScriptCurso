@@ -1,0 +1,16 @@
+{
+    
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "window.zoomLevel": 0,
+    "code-runner.executorMap": {
+        "typescript": "ts-node",
+        
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    }
+}
