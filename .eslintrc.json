@@ -11,6 +11,9 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
+  "env": {
+    "browser": true
+  },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     // Adicione regras personalizadas aqui, se desejar
