@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "code-runner.executorMap": {
+        "typescript": "npx ts-node --files",
+    },
+    "code-runner.runInTerminal": true,
+    "workbench.colorTheme": "Beautiful Dracula Normal - No Highlight",
+}

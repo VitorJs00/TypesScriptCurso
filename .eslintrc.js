@@ -3,15 +3,13 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier',
   ],
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 2020,
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
   },
   settings: {
     'import/resolver': {
@@ -26,9 +24,9 @@ module.exports = {
     amd: true,
     node: true,
   },
-  plugins: ['simple-import-sort', '@typescript-eslint', 'prettier'],
+  plugins: ['simple-import-sort', 'prettier'],
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true }],
+    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     // Adicione regras personalizadas aqui, se desejar
   },
 };
