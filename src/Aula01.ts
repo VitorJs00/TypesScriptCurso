@@ -1,4 +1,3 @@
-const x = 9;
-console.log("sim", x);
+const x = 6;
 
-console.log("nao", x);
+console.log("sim", x);
