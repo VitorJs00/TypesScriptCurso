@@ -1,21 +1,21 @@
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
   ],
   root: true,
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: 'module',
+    sourceType: "module",
   },
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       node: {
-        paths: ['src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        paths: ["src"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     },
   },
@@ -24,9 +24,9 @@ module.exports = {
     amd: true,
     node: true,
   },
-  plugins: ['simple-import-sort', 'prettier'],
+  plugins: ["simple-import-sort", "prettier"],
   rules: {
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    "prettier/prettier": ["error", {}, { usePrettierrc: false }],
     // Adicione regras personalizadas aqui, se desejar
   },
 };

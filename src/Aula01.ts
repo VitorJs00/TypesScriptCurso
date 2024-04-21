@@ -1,4 +1,4 @@
 const x = 9;
-console.log('sim', x);
+console.log("sim", x);
 
-console.log('nao', x);
+console.log("nao", x);
